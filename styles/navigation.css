@@ -7,17 +7,12 @@
 
 .navbar {
     display: flex;
-    padding: 16px;
+    padding: 15px;
     font-family: 'leto', sans-serif;
     background-color: #E1BBC9;
 }
 
-.navbar-content {
-    display: flex;
-   
-}
-
-.navbar-link {
+.navbar-text {
     display: flex;
     align-content: flex-start;
     font-family: 'leto', sans-serif;
@@ -30,62 +25,33 @@
     padding-right: 8px;
 }
 
-
-
-.link-toggle {
-    display:none;
-}
-
-/*.navigation {
-    position: sticky;
-    width: 0px;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    /*z-index: 1;
-    
-    padding-top: 70px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100px;
-}*/
-
-.navbar-link:hover {
+.navbar-text:hover {
     background-color: #1B1F3B;
-    /* /text-shadow: 1px 1px #454ADE; */
-    /* opacity: 0.33; 
+    
 }
 
-/*.heading-text {
-    
-    font-family: 'leto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 30px;
-    text-align: center;*/
-
+@media screen and (max-width: 1400px) {
+  
+  .fa-bars {
+    display: none;
+  }
 }
 
 @media only screen and (max-width:768px) {
-  .navbar-content,
+  
   .navbar {
+    display: flex;
+    justify-content: left;
     flex-direction: column;
   }
 
-  .navbar-content {
+  .navbar-text {
     display: none;
   }
 
-  .navbar-ToggleShow{
+.fa-bars { 
+    
     display: flex;
-  }
-  
-  .link-toggle {
-    display: initial;
-   
-    /*display: flex;don't remove this*/
     align-self: flex-start;
     cursor: pointer;
     

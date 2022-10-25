@@ -13,30 +13,29 @@
     </head>
         <body>
         
-           <div class="nav-container"> <!--fix indentations-->
+        <div class="nav-container"> <!--fix indentations-->
+            
+         <div class="navbar" id="links">
+            <a class="navbar-text" href="#Home">Home</a>
+            <a class="navbar-text" href="#services">Services</a>
+            <a class="navbar-text" href="#about">About</a>
+            <a class="navbar-text" href="#contact">Contact</a>
+            <a class="icon" onclick="burgerMenu()">
+            <i class="fa-solid fa-bars"></i> <!--look through the code/script-->
+            </a>
+         </div>
+        </div>
         
-          <div class="navbar">
-        
-        <div class="link-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-          </div>
-           </div>
-    <nav class="navbar-content">
-        <div class="navbar-link">
-            Home
-        </div>
-        <div class="navbar-link">
-            Services
-        </div>
-        <div class="navbar-link">
-            About
-        </div>
-        <div class="navbar-link">
-            Contact
-        </div>
-    </nav> 
-          <!--<h1 class="heading-text">This is a test page.</h1>-->
-     </body>
+            <script>
+                function burgerMenu() { 
+                    let burger = document.getElementById("links");
+                    if (burger.className === "navbar") {
+                    burger.className += " responsive";
+                    } else {
+                    burger.className = "navbar";
+                    }
+                }
+                </script>
+        </body>
 </html>
 
