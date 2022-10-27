@@ -13,19 +13,20 @@
     </head>
         <body>
         
-        <div class="nav-container"> <!--fix indentations-->
+        <div class="nav-container">
+                
+            <div class="navbar" id="links">
+                <a class="icon" onclick="burgerMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <a class="navbar-text" href="#Home"><span>Home</span></a>
+                <a class="navbar-text" href="#services"><span>Services</span></a>
+                <a class="navbar-text" href="#about"><span>About</span></a>
+                <a class="navbar-text" href="#contact"><span>Contact</span></a>
             
-         <div class="navbar" id="links">
-            <a class="navbar-text" href="#Home">Home</a>
-            <a class="navbar-text" href="#services">Services</a>
-            <a class="navbar-text" href="#about">About</a>
-            <a class="navbar-text" href="#contact">Contact</a>
-            <a class="icon" onclick="burgerMenu()">
-            <i class="fa-solid fa-bars"></i> <!--look through the code/script-->
-            </a>
-         </div>
+            </div>
         </div>
-        
+            
             <script>
                 function burgerMenu() { 
                     let burger = document.getElementById("links");

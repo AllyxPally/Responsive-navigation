@@ -25,29 +25,26 @@
     padding-right: 8px;
 }
 
-.navbar-text:hover {
+.navbar-text span:hover {
     background-color: #1B1F3B;
     
 }
 
 @media screen and (max-width: 1400px) {
-  
   .fa-bars {
     display: none;
   }
 }
 
 @media only screen and (max-width:768px) {
-  
   .navbar {
     display: flex;
     justify-content: left;
     flex-direction: column;
   }
-
-  .navbar-text {
+  .navbar a:not(:first-child) {
     display: none;
-  }
+    }
 
 .fa-bars { 
     
@@ -56,6 +53,15 @@
     cursor: pointer;
     
   }
+
+  .nav-container .responsive {
+    display: flex;
+  }
+
+  .nav-container .responsive .navbar-text {
+    display: inline;
+  }
     
 } 
+
  
