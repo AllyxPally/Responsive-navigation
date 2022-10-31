@@ -30,11 +30,11 @@
     
 }
 
-@media screen and (max-width: 1400px) {
+/*@media screen and (max-width: 1400px) {
   .fa-bars {
     display: none;
   }
-}
+}*/
 
 @media only screen and (max-width:768px) {
   .navbar {
